@@ -167,8 +167,7 @@ vendor/lib/libOmxWmaDec.so
 vendor/lib/libSHIMDivxDrm.so
 
 # Moto
-bin/batt_health
-bin/dbvc_atvc_property_set
+bin/dbvc_atvc_property_set:vendor/bin/dbvc_atvc_property_set
 
 # Perf
 bin/mpdecision
