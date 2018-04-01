@@ -451,6 +451,20 @@ service location_mq /system/bin/location-mq
     group gps
     disabled
 
+service hciattach /vendor/bin/hci_qcomm_init -e
+    class late_start
+    user bluetooth
+    group bluetooth net_bt_admin oem_2950 diag radio
+    disabled
+    oneshot
+
+on property:bluetooth.hciattach=true
+    start hciattach
+    setprop bluetooth.status on
+
+on property:bluetooth.hciattach=false
+    setprop bluetooth.status off
+
 service mmi-boot-sh /system/bin/sh /init.mmi.boot.sh
     class core
     user root
