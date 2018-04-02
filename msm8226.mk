@@ -90,6 +90,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libxml2 \
     libshims_camera \
+    android.hardware.camera.provider@2.4-impl-legacy \
     camera.msm8226 \
     Snap
 
