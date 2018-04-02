@@ -138,7 +138,11 @@ endif
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
 # Shims
-TARGET_LD_SHIM_LIBS := /system/vendor/bin/thermal-engine|libshims_thermal.so:/system/vendor/bin/mpdecision|libshims_atomic.so:/system/lib/hw/camera.vendor.msm8226.so|libshims_camera.so:/system/lib/libmot_sensorlistener.so|libshims_sensorlistener.so
+TARGET_LD_SHIM_LIBS := \
+/system/vendor/bin/thermal-engine|libshims_thermal.so \
+/system/vendor/bin/mpdecision|libshims_atomic.so \
+/system/lib/hw/camera.vendor.msm8226.so|libshims_camera.so \
+/system/lib/libmot_sensorlistener.so|libshims_sensorlistener.so
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
