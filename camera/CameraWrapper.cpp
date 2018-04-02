@@ -32,6 +32,7 @@
 #include <hardware/hardware.h>
 #include <hardware/camera.h>
 #include <camera/Camera.h>
+#include <camera/CameraParameters.h>
 
 #define BACK_CAMERA     0
 #define FRONT_CAMERA    1
